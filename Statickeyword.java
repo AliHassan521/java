@@ -14,8 +14,8 @@ public class Statickeyword {
 
     public static void main(String[] args) {
 
-        // static variable is shared among all objects of the class and called using its
-        // class name
+        // static variable is shared among all objects of the class, called using its
+        // class name and it is a class member not object
 
         Mobile m1 = new Mobile();
 
