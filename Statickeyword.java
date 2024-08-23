@@ -8,6 +8,11 @@ class Mobile {
     public void show() {
         System.out.println("Brand: " + brand + " Price: " + price + " Name: " + name);
     }
+
+    // static method
+    public static void display(Mobile obj) {
+        System.out.println("Brand: " + obj.brand + " Price: " + obj.price + " Name: " + name);
+    }
 }
 
 public class Statickeyword {
@@ -33,5 +38,10 @@ public class Statickeyword {
 
         m1.show();
         m2.show();
+
+        // Mobile.show(); Error: non-static method show() cannot be referenced from a
+        // static context or class name
+
+        Mobile.display(m1);
     }
 }
